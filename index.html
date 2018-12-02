@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>
+        MojeID
+    </title>
+    <meta name="author" content="Svetoslav Filev">
+    <meta http-equiv="content-language" content="cs">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./mobile.js"></script>
+
+</head>
+
+<body>
+    <nav>
+        <div id="nav-content">
+            <a href="#" id="mobile-menu">
+                <img src="Images/header-burger.svg" alt="tlačítko menu">
+            </a>
+            <a href="./index.html" id="main-logo-wrapper">
+                <img id="main-logo-img" src="Images/mojeid-logo.svg" alt="Logo Moje ID">
+            </a>
+            <a href="#" id="mobile-search">
+                <img id="mobile-search-img" src="Images/header-hledat.svg" alt="tlačítko vyhledávání">
+            </a>
+            <div id="nav-list-wrapper">
+                <div>
+                    <ul id="upper-list">
+                        <li>
+                            <a href="#">Pro uživatele</a>
+                        </li>
+                        <li>
+                            <a href="#" id="active-link">Pro poskytovatele</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+                <div>
+                    <ul id="bottom-list">
+                        <li>
+                            <a href="#">Proč mojeID</a>
+                        </li>
+                        <li>
+                            <a href="#">Varianty a ceny</a>
+                        </li>
+                        <li>
+                            <a href="#">Jak zavést</a>
+                        </li>
+                        <li>
+                            <a href="#">O nás</a>
+                        </li>
+                        <li>
+                            <a id="lupa" href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <button id="login-button">Přihlásit se do MojeID</button>
+                </div>
+            </div>
+            <div id="search-bar-wrapper">
+                <input type="text" name="search-bar-input" id="search-bar-input" placeholder="Search...">
+            </div>
+        </div>
+    </nav>
+    <content>
+        <section class="first-section">
+            <div class="section-content-wrapper">
+                <img class="section-image" src="Images/index-hero-poskyt.svg" alt="index-hero-poskyt">
+                <div class="text-section-wrapper">
+                    <h2>
+                        Ověření uživatelé na Váš web
+                    </h2>
+                    <p>
+                        Uživatelé mojeID prochází několikaúrovňovou verifikací, počínaje kontrolou e-mailu a čísla
+                        mobilního
+                        telefonu, přes ověření doručovací adresy, až po validaci dle občanského průkazu.
+                        Při každém přihlášení máte přehled o tom, ve které z těchto úrovní se daný uživatel nachází.
+                    </p>
+                    <button>Zavést MojeID</button>
+                </div>
+
+
+            </div>
+        </section>
+        <section class="second-section">
+            <div class="section-content-wrapper">
+                <div class="carousel">
+                    <div class="carousel-column  carousel-column-left">
+                        <img id="profile-1" alt="Obrázek autorky citátu" src="Images/profile-1.png">
+                        <img id="reference-stin" alt="Barevný stín" src="Images/reference-stin.svg">
+                    </div>
+                    <div class="carousel-column  carousel-column-right">
+                        <h3>
+                            eBadatelna
+                        </h3>
+                        <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu
+                            pharetra
+                            nec,
+                            mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus,
+                            tortor
+                            sed
+                            eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui.</q><br>
+                        <small class="author">Františka Omáčka, CIO</small>
+                    </div>
+                    <div class="slideshow-indicator">
+                        <span class="dot"></span>
+                        <span id="active-slide" class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <div id="video">
+                    <iframe width=100% height=50% src="https://www.youtube.com/embed/8n-v2ifN-hc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div id="statistics">
+                    <div class="stat-primary">
+                        <div class="stat-primary-heading">556 608</div>
+                        uživatelů mojeID
+                    </div>
+                    <div class="stat-secondary">
+                        <div class="stat-secondary-heading">507</div>
+                        registrací poslední týden
+                    </div>
+                    <div class="stat-secondary">
+                        <div class="stat-secondary-heading">2552</div>
+                        registrací poslední měsíc
+                    </div>
+                </div>
+            </div>
+        </section>
+    </content>
+
+
+
+    <footer>
+        <div id="footer-content">
+            <div class="footer-column footer-left">
+                <img id="mojeid-logo-footer" alt="moje ID menší logo" src="Images/mojeid-logo-footer.svg">
+            </div>
+            <div class="footer-column footer-right">
+                <div id="footer-list-wrapper">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                English
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Kontakty
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Údaje o společnosti
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Pravidla služby
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Ceník
+                            </a>
+                        </li>
+                    </ul>
+                    <hr class="mobile-width-hr">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Varianty
+                            </a href="#">
+                        </li>
+                        <li>
+                            <a href="#">
+                                MojeID Lite
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                OTP
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Validace
+                            </a>
+                        </li>
+                    </ul>
+                    <hr class="mobile-width-hr">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Statistiky
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Ke stažení
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Vzorové implementace
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Mediakit
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="mobile-full-hr">
+                <div id="pravni">
+                    Copyright 2017 CZ.NIC, z. s. p. o.<br><br>
+                    Službu mojeID provozuje sdružení CZ.NIC, zájmové sdružení právnických osob zapsáno ve spolkovém
+                    rejstříku vedeném u Městského soudu v Praze, spisová značka L 58624.
+                </div>
+            </div>
+            <hr class="mobile-full-hr">
+        </div>
+        <div id="podpora">
+            Nonstop podpora na +420 222 745 111 a podpora@mojeid.cz
+        </div>
+    </footer>
+</body>
+
+</html>

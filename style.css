@@ -1,0 +1,612 @@
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+h2 {
+    margin: 0;
+}
+h3 {
+    color: #3EA6FF;
+    font-size: 22px;
+    line-height: 34px;
+}
+button {
+    background-color: #FFCA00;
+    border: 1px solid #B38F00;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #665200;
+    padding: 17px 37px 21px 37px;
+    border-radius: 3px;
+    transition: 0.2s ease;
+}
+button:hover {
+    background-color: #FFCA00;
+    border: 1px solid #B38F00;
+    text-decoration: underline;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px #404040;
+}
+a {
+    transition: 0.2s ease;
+    text-decoration: none;
+}
+
+
+
+
+nav {
+    background-color: #404040;
+    width: 100%;
+    height: 100px;
+}
+
+#nav-content {
+    position: relative;
+    height: 100%;
+}
+nav hr {
+    position: absolute;
+    top: 49px;
+    left: 215px;
+    margin: 0 5px 0 0;
+    height: 0px;
+    width: 60%;
+    border: 1px solid #696969;
+    background-color: #696969;
+}
+#nav-list-wrapper{
+    display: inline-block;
+    padding-left: 210px;
+}
+#upper-list li a {
+    text-transform: uppercase;
+    color: #737373;
+    font-size: 12px;
+    padding: 0 6px;
+}
+#upper-list li:first-of-type a {
+    padding-right: 12px;
+    margin-right: 6px;
+    border-right: 2px solid #696969;
+}
+
+#upper-list li a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+#upper-list li a:visited {
+    color: #737373;
+}
+#bottom-list li a {
+    height: 50px;
+    padding: 16px 6px;
+    margin-right: 17px;
+}
+#bottom-list li a:hover {
+    color: #ffffff;
+    background-color: #595959;
+}
+#bottom-list li a:visited {
+    color: #ffffff;
+}
+
+#upper-list, #bottom-list {
+    display: table;
+    height: 50px;
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+#upper-list li, #bottom-list li {
+    box-sizing: border-box;
+    display: table-cell;
+    vertical-align: middle;
+}
+#upper-list li a, #bottom-list li a {
+    display: block;
+}
+#upper-list #active-link {
+    color: #ffffff;
+}
+#lupa {
+    margin-right: 0;
+    padding: 0 26px !important;
+    background-image: url(Images/header-hledat.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px 16px;
+}
+#login-button {
+    position: absolute;
+    top: 35px;
+    padding: 7px 14px;
+    right: 35px;
+    background-color: #F2F2F2;
+    border-color: #404040;
+    box-shadow: 0px 0px 10px #404040;
+}
+#login-button:hover {
+    background-color: rgb(202, 202, 202);
+    color: #665200;
+}
+#nav-content{
+    width: 1000px; 
+    margin: auto;
+}
+#main-logo-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    line-height: 100px;
+    width: 210px;
+    display: inline-block;
+}
+#main-logo-img {
+    padding-left: 20px;
+    height: 44px;
+    vertical-align: middle;
+}
+
+
+
+#search-bar-wrapper {
+    z-index: 1500;
+    text-align: right;
+    background: #595959;
+    position: absolute;
+    top: 100px;
+    right: 130px;
+    display: none;
+    padding: 10px;
+    box-shadow: 0px 0px 10px #404040;
+}
+#search-bar-input {
+    text-align: right;
+    font-size: 20px;
+    border: none;
+    padding: 10px;
+    border: 3px solid transparent;
+}
+#search-bar-input:focus {
+    outline: none;
+    border: 3px solid #3EA6FF;
+}
+
+
+section {
+    padding: 0 30px;
+}
+.section-content-wrapper {
+    margin: auto;
+    max-width: 1000px;
+    display: block;
+    position: relative;
+}
+.text-section-wrapper {
+    width: 40%;
+    display: inline-block;
+    top: 78px;
+    position: absolute;
+    z-index: 1100;
+}
+.section-image {
+    position: absolute;
+    right: 0;
+    z-index: 1000;
+    max-width: 590px;
+    display: inline-block;
+}
+.first-section {
+    background: #3EA6FF;
+    min-height: 560px;
+}
+.first-section h2 {
+    line-height: 52px;
+    font-size: 42px;
+    color: #ffffff;
+}
+.second-section {
+    background: #ffffff;
+}
+.section-content-wrapper p, q, .author  {
+    line-height: 34px;
+    font-size: 18px;
+}
+.author {
+    color: #696969;
+}
+.first-section .section-content-wrapper p {
+    color: #f2f2f2;
+}
+.carousel {
+    padding: 140px 0;
+    max-width: 763px;
+    display: inline-block;
+}
+#profile-1 {
+    max-width: 248px;
+
+}
+#reference-stin {
+    max-width: 202px;
+}
+.second-section .section-content-wrapper {
+    text-align: center;
+}
+.carousel-column {
+    margin: 0;
+    padding: 0;
+    float: left;
+    text-align: left;
+}
+.carousel-column-left {
+    margin: 20px auto;
+    width: 44%;
+    text-align: center;
+}
+.carousel-column-right {
+    margin-left: 20px;
+    width: 50%;
+}
+.carousel-column:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.slideshow-indicator {
+    padding-top: 410px;
+    text-align: center;
+}
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 10px;
+    background-color: #D9DEE2;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+.dot:hover {
+    background-color: #3EA6FF;
+    box-shadow: 0px 0px 5px #404040;
+}
+#active-slide {
+    background-color: #3EA6FF;
+}
+
+
+
+
+#video {
+    position: relative;
+    padding-top: 56.25%;
+}
+#video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px #696969;
+}
+
+
+
+footer {
+    text-align: center;
+    color: #666666;
+    background: #404040;
+}
+#footer-content {
+    text-align: left;
+    margin: auto;
+    max-width: 1000px;
+}
+.footer-column {
+    float: left;
+}
+.footer-left {
+    display: inline-block;
+    width: 26.5%;
+    height: 100%;
+}
+.footer-right {
+    display: inline-block;
+    width: 73.5%;
+    margin: 53px auto;
+}
+.footer-column:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#mojeid-logo-footer {
+    display: block;
+    margin: 85px auto auto 30px;
+    max-width: 120px;
+}
+
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+footer ul:not(:first-of-type) {
+    padding-left: 50px;
+    border-left: 2px solid #595959;
+}
+footer ul {
+    line-height: 26px;
+    padding-right: 50px;
+}
+footer ul li a {
+    color: #B3B3B3;
+}
+footer ul li a:hover { 
+    text-decoration: underline;
+}
+
+footer hr {
+    margin: auto 30px;
+    height: 0px;
+    border: 1px solid #696969;
+    background-color: #696969;
+}
+#podpora {
+    display: inline-block;
+    padding: 59px 0;
+    font-size: 32px;
+    text-align: center;
+}
+#pravni {
+    margin: 48px 48px auto auto;
+    font-size: 12px;
+}
+
+
+
+#statistics {
+    padding: 130px 0;
+    margin: auto;
+    display: block;
+    width: 90%;
+}
+.stat-primary {
+    padding: 38px 0;
+    color: #696969;
+    font-size: 30px;
+    width: 100%;
+}
+.stat-primary-heading {
+    color: #3EA6FF;
+    font-size: 96px;
+    font-weight: bold;
+}
+.stat-secondary {
+    padding: 38px 90px;
+    display: inline-block;
+    color: #696969;
+    font-size: 20px;
+}
+.stat-secondary-heading {
+    color: #3EA6FF;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 1000px) {
+    #mobile-menu {
+        display: none;
+    }
+    #mobile-search{
+        display: none;
+    }
+    .section-image {
+        display: inline-block;
+        position: absolute;
+    }
+    .footer-column hr {
+        display: none;
+    }
+    .mobile-width-hr {
+        display: none;
+    }
+    #search-bar-wrapper {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    nav {
+        height: 60px;
+    }
+    #nav-content {
+        width: 100%;
+        text-align: center;
+        z-index: 1600;
+    }
+    #nav-list-wrapper {
+        width: 100%;
+        max-width: 350px;
+        padding: 0 25px 25px 25px;
+        z-index: 1500;
+        display: none;
+        background: #595959;
+        position: absolute;
+        left: 0;
+        text-align: left;
+        box-shadow: 0px 0px 10px #404040;
+    }
+    #upper-list, #bottom-list {
+        width: 100%;
+        border-bottom: 2px solid #696969;
+    } 
+    #upper-list li, #bottom-list li {
+        display: block;
+        width: 100%;
+    }
+    #upper-list {
+        padding: 10px 0;
+    }
+    #upper-list li {
+        padding: 10px 0;
+    }
+    #upper-list li:first-of-type a {
+        border: none;
+    }
+    #bottom-list li a:hover{
+        background: #737373;
+    }
+    #bottom-list li #lupa {
+        display: none;
+    }
+    #login-button {
+        margin-top: 20px;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    #main-logo-wrapper {
+        position: relative;
+        display: inline-block;
+        margin: auto;
+        line-height: 60px;
+    }   
+    #main-logo-img {
+        max-width: 100px;
+        padding-left: 0;
+    }
+    nav hr {
+        display: none;
+    }
+    #mobile-menu {
+        padding: 15px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        display: inline-block;
+    }
+    #mobile-menu:hover, #mobile-search:hover {
+        background-color: #666666;
+        cursor: pointer;
+    }
+    #mobile-menu img {
+        height: 30px;
+        width: 30px;
+    }
+    #mobile-search {
+        padding: 15px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        display: inline-block;
+    }
+    #mobile-search-img {
+        height: 30px;
+        width: 30px;
+    }
+    #login-button {
+        position: relative;
+    }
+    #search-bar-wrapper {
+        position: absolute;
+        top: 60px;
+        right: 0;
+    }
+
+    
+
+    .section-content-wrapper {
+        text-align: center;
+    }
+    .text-section-wrapper {
+        text-align: left;
+        padding: 50px 0;
+        top: 0;
+        position: relative;
+        width: 90%;
+    }
+    .section-image {
+        right: 30px;
+        display: inline-block;
+        position: relative;
+    }
+    .footer-column {
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+    }
+    .footer-column ul {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+    #footer-list-wrapper {
+        padding-bottom: 30px;
+    }
+    footer ul:not(:first-of-type) {
+        padding: 10px;
+        border: none;
+    }
+    #mojeid-logo-footer {
+        margin: 0;
+        padding: 25px 10px;
+    }
+    .mobile-width-hr {
+        width: 95%;
+        margin: 0 10px;
+    }
+    .mobile-full-hr {
+        width: 100%;
+        margin: 0;
+    }
+    #pravni {
+        margin: 0;
+        padding: 30px 10px;
+    }
+}
+@media only screen and (max-width: 720px) {
+    section {
+        padding: 0 15px;
+    }
+    .text-section-wrapper {
+        width: 100%;
+    }
+    .text-section-wrapper h2 {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .carousel-column-left {
+        display: none;
+    }
+    .carousel-column-right {
+        margin: 0;
+        width: 100%;
+    }
+    .stat-primary-heading {
+        font-size: 48px;
+    }
+    .stat-secondary {
+        padding: 38px 0;
+        width: 100%;
+    }
+    #podpora {
+        font-size: 24px;
+    }
+}
